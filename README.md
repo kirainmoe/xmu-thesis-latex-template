@@ -4,7 +4,11 @@
 
 排版格式遵守 《厦门大学本科毕业论文(设计)规范》（2016 年 2 月 24 日印发，厦大教〔2016〕5 号）并参考《本科毕业论文格式模板 2022 届版本》，冲突规则以前者为准。
 
-用法参见 `thesis.tex` 文件。
+用法参见 `thesis.tex` 文件。一般来说，你只需要：
+
+- 按照 `thesis.tex` 中的示例，修改 `\xmusetup` 中的元信息
+- 在 `chapters/` 下编写各章节的 TEX 文件，在 `thesis.tex` 使用 `\input{texpath}` 引入
+- 使用 `make` 命令运行 LaTeXMK 得到 `thesis.pdf`
 
 需要在 XeLaTeX 环境下编译，编写完成后直接使用 `make` 使用 LaTexMK 编译即可。
 
