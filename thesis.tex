@@ -1,0 +1,71 @@
+% !TeX encoding = UTF-8
+% !TeX program = xelatex
+% !TeX spellcheck = en_US
+
+% XMU Thesis LaTeX template
+
+\documentclass{xmuthesis}
+
+\xmusetup{
+  % 论文（设计）标题
+  title = 面向非结构化企业指标信息的智能处理和可视分析,
+  % 论文（设计）英文标题
+  en-title = Indicators of the Unstructured Information for Intelligence Processing and Visualization,
+  % 作者
+  author = 王嘉然,
+  % 学号
+  student-no = 1145141919810,
+  % 学院
+  institute = 信息学院,
+  % 专业
+  profession = 计算机科学与技术,
+  % 年级
+  grade = 2018,
+  % 论文类型 （主修 / 辅修）
+  type = 主修,
+  % 校内指导老师姓名 / 职称
+  teacher = XXX,
+  teacher-title = 教授,
+  %% 校外指导老师，若不需要则直接省略以下字段即可
+  offcampus-teacher = YYY,
+  offcampus-teacher-title = 老师,
+  % 日期
+  date = 二〇二二年五月十日,
+  % CJK 字体设定集 (Windows, macOS)
+  font-preset = macos,
+}
+
+\begin{document}
+  % 论文封面
+  \maketitle
+
+  % 《厦门大学本科学位论文诚信承诺书》导入方式二选一：
+  % 
+  % 1. 直接修改并引入 `chapters/promise.tsx`， chapters/promise.tex 为承诺书原件，可自行修改
+  % \input{chapters/promise}
+  %
+  % 2. 若要嵌入签名后的 PDF 扫描件，导入 figures/promise.pdf 即可
+  % \includepdf[pages=-]{figures/promise.pdf}
+  \input{chapters/promise}
+
+  % 致谢
+  \input{chapters/acknowledge}
+
+  % 摘要
+  \input{chapters/abstract}
+  \input{chapters/abstract-en}
+
+  % 目录
+  \maketoc
+
+  % 正文
+  \beginbody
+  \input{chapters/chapter01}
+  \input{chapters/chapter02}
+
+  % 参考文献
+  \makerefs
+
+  % 附录
+  \makeappendix
+\end{document}

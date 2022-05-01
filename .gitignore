@@ -1,0 +1,16 @@
+*.log
+*.aux
+*.bcf
+*.log
+*.xml
+*.toc
+*.blg
+*.fdb_latexmk
+*.fls
+*.xdv
+*.bbl
+*.out
+*.toe
+_minted-*
+
+.DS_Store
